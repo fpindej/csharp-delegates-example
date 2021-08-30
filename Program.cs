@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace DelegatesExample
+﻿namespace DelegatesExample
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             Example1.Run();
         }
