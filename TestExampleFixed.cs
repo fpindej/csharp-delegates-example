@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace DelegatesExample
 {
-    public class TestExample
+    public class TestExampleFixed
     {
         public static Task RunAsync()
         {
@@ -14,10 +14,10 @@ namespace DelegatesExample
             });
         }
 
-        private static async Task SomeMethodAsync(Action action)
+        private static async Task SomeMethodAsync(Func<Task> action)
         {
             await Task.Delay(1);
-            action();
+            await action();
         }
     }
 }

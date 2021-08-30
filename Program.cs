@@ -9,7 +9,8 @@ namespace DelegatesExample
             //Example1.Run();
             //Example2.Run();
             //Example3.Run();
-            await TestExample.RunAsync();
+            //await TestExample.RunAsync();
+            await TestExampleFixed.RunAsync();
         }
     }
 }
