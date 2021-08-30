@@ -7,19 +7,19 @@ namespace DelegatesExample
 
     internal class Student
     {
-        private readonly int TotalMarks;
+        private readonly int _totalMarks;
 
         private string Name { get; set; }
 
         internal Student(string name, int totalMarks)
         {
             Name = name;
-            TotalMarks = totalMarks;
+            _totalMarks = totalMarks;
         }
 
         internal void CheckIfPassed(IsPassedExam isPassedExam)
         {
-            if (isPassedExam(TotalMarks))
+            if (isPassedExam(_totalMarks))
             {
                 Console.WriteLine($"Student {Name} passed the exam");
             }
