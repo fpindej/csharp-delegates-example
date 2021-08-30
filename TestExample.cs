@@ -7,7 +7,6 @@ namespace DelegatesExample
     {
         public static Task RunAsync()
         {
-            //THIS DOESN'T WORK, DO YOU KNOW HOW TO FIX IT?
             return SomeMethodAsync(async () =>
             {
                 await Task.Delay(1000);
@@ -15,10 +14,10 @@ namespace DelegatesExample
             });
         }
 
-        private static async Task SomeMethodAsync(Action action)
+        private static async Task SomeMethodAsync(Func<Task> action)
         {
             await Task.Delay(1);
-            action();
+            await action();
         }
     }
 }
