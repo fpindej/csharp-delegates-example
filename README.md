@@ -40,8 +40,10 @@ var runMethodAsync = new Func<Task>(TestExampleFixed.RunAsync);
 
 ## Table of example methods
 
-| Synchronous methods 	| Asynchronous methods      	|
-|:-------------------:	|---------------------------	|
-|     Example1.Run    	| TestExample.RunAsync      	|
-|     Example2.Run    	| TestExampleFixed.RunAsync 	|
-|     Example3.Run    	|                           	|
+| Synchronous methods          	| Asynchronous methods      	|
+|------------------------------	|---------------------------	|
+| AnonymousMethodExample.Run   	| TestExample.RunAsync      	|
+| DeclareDelegateExample.Run   	| TestExampleFixed.RunAsync 	|
+| FuncActionExample.Run        	|                           	|
+| MulticastDelegateExample.Run 	|                           	|
+| StudentExamExample.Run       	|                           	|
