@@ -16,9 +16,9 @@ namespace DelegatesExample.Examples
             Calculate subtractOperation = Subtract;
             Calculate multiplyOperation = (x, y) => x * y;
 
-            Console.WriteLine("Sum of 5 and 3 is ", addOperation(5, 3));
-            Console.WriteLine("Subtraction of 420 and 69 is ", subtractOperation.Invoke(420, 69));
-            Console.WriteLine("Multiplication of 2 and 2 is ", multiplyOperation(2, 2));
+            Console.WriteLine($"Sum of 5 and 3 is {addOperation(5, 3)}");
+            Console.WriteLine($"Subtraction of 420 and 69 is {subtractOperation.Invoke(420, 69)}");
+            Console.WriteLine($"Multiplication of 2 and 2 is {multiplyOperation(2, 2)}");
         }
     }
 }
