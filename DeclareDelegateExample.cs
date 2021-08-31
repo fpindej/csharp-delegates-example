@@ -2,7 +2,7 @@
 
 namespace DelegatesExample
 {
-    internal class Example1
+    internal class DeclareDelegateExample
     {
         private delegate int Calculate(int x, int y);
 
@@ -13,7 +13,7 @@ namespace DelegatesExample
         internal static void Run()
         {
             var addOperation = new Calculate(Add);
-            var subtractOperation = new Calculate(Subtract);
+            Calculate subtractOperation = Subtract;
             Calculate multiplyOperation = (x, y) => x * y;
 
             Console.WriteLine("Sum of 5 and 3 is ", addOperation(5, 3));
