@@ -2,7 +2,7 @@
 
 namespace DelegatesExample
 {
-    internal class Example3
+    internal class FuncActionExample
     {
         private static void DoSomething(int i) => Console.WriteLine(i);
 
