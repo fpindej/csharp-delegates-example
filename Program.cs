@@ -1,21 +1,19 @@
-﻿using System;
+﻿using DelegatesExample.Examples;
+using DelegatesExample.Test;
+using System;
 using System.Threading.Tasks;
 
 namespace DelegatesExample
 {
     internal class Program
     {
-        public delegate void RunDelegate();
-
-        public delegate Task RunDelegateAsync();
-
         private static async Task Main()
         {
-            var runMethod = new Action(Example1.Run);
+            var runMethod = new Action(DeclareDelegateExample.Run);
             runMethod();
 
-            //var runMethodAsync = new Func<Task>(TestExampleFixed.RunAsync);
-            //await runMethodAsync();
+            var runMethodAsync = new Func<Task>(TestExample.RunAsync);
+            await runMethodAsync();
         }
     }
 }

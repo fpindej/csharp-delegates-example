@@ -1,6 +1,6 @@
 using System;
 
-namespace DelegatesExample
+namespace DelegatesExample.Examples
 {
     internal class AnonymousMethodExample
     {
@@ -8,12 +8,12 @@ namespace DelegatesExample
 
         internal static void Run()
         {
-            NumberOperation printPow = delegate(int x)
+            NumberOperation printPow = delegate (int x)
             {
-                Console.WriteLine($"The pow of {x} is {x*x}");
+                Console.WriteLine($"The pow of {x} is {x * x}");
             };
 
-            printPow(5);            
+            printPow(5);
         }
     }
 }

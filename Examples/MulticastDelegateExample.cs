@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DelegatesExample
+namespace DelegatesExample.Examples
 {
     internal class MulticastDelegateExample
     {

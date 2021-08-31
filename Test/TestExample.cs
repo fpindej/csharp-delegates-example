@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace DelegatesExample
+namespace DelegatesExample.Test
 {
-    public class TestExampleFixed
+    public class TestExample
     {
         public static Task RunAsync()
         {
@@ -14,10 +14,10 @@ namespace DelegatesExample
             });
         }
 
-        private static async Task SomeMethodAsync(Func<Task> action)
+        private static async Task SomeMethodAsync(Action action)
         {
             await Task.Delay(1);
-            await action();
+            action();
         }
     }
 }

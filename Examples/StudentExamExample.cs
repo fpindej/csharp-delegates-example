@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DelegatesExample
+namespace DelegatesExample.Examples
 {
     internal delegate bool IsPassedExam(int totalScore);
 
@@ -30,7 +30,7 @@ namespace DelegatesExample
         }
     }
 
-    internal class Example2
+    internal class StudentExamExample
     {
         private static bool ConditionForPassing(int score) => score > 50;
 
